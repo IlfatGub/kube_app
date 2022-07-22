@@ -47,13 +47,13 @@ spec:
   selector:
     tier: myweb
     app: nginx-app
-  # type: NodePort
+  type: NodePort
   ports:
   - protocol: TCP
     nodePort: 31111
     port: 80
     targetPort: 80
-  type: LoadBalancer
+  # type: LoadBalancer
   # type: ClusterIP
   # externalIPs:
   # - 10.224.200.46 
